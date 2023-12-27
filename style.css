@@ -1,0 +1,502 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: black;
+  width: 100%;
+}
+:root {
+  --color-home: #f9f4f5;
+  --primary-color-rose: #f8c4cc;
+  --secundary-color-green-ligth: #99d8e5;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--color-home);
+}
+
+.nav-container {
+  position: fixed;
+  width: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secundary-color-green-ligth);
+  text-align: center;
+  z-index: 2;
+}
+.container-ul {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 5px;
+}
+.container-ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color-rose);
+  height: 80px;
+  border-radius: 20px;
+  transform: scale(0.9);
+  font-size: 1.5rem;
+  color: var(--color-home);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+.container-ul li:hover {
+  transition: ease-in-out;
+  transform: scale(1.1);
+}
+.container-ul a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ////////////////////////////////////// */
+.container-body {
+  position: relative; /* o puedes usar 'fixed' dependiendo de tu diseño */
+  display: block;
+  width: 100%;
+  padding-left: 7rem;
+  margin-bottom: 30rem;
+}
+.home-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2rem;
+}
+.home {
+  height: 100vh;
+  background-color: var(--primary-color-rose);
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.container-description {
+  margin-top: 15rem;
+  padding-left: 5rem;
+}
+.container-description h2 {
+  font-size: 90px;
+  text-align: center;
+  color: var(--color-home);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.container-description p {
+  font-size: 35px;
+  color: var(--color-home);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.img-home {
+  width: 800px;
+  height: 100vh;
+}
+/*Stars*/
+.sky {
+  top: 0;
+
+  position: absolute;
+  height: 100vh;
+  width: 150vh;
+  z-index: 1001;
+}
+.star {
+  z-index: 100;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 2px;
+  border-radius: 885px;
+  background: linear-gradient(-45deg, #eef0f5, rgba(0, 0, 255, 0));
+
+  -webkit-filter: drop-shadow(0 0 6px #eef1f8);
+  filter: drop-shadow(0 0 6px #d7dff0);
+  -webkit-animation: tail 3000ms ease-in-out infinite,
+    shooting 3000ms ease-in-out infinite;
+  animation: tail 3000ms ease-in-out infinite,
+    shooting 3000ms ease-in-out infinite;
+}
+
+/* Here we add before and after effect to star */
+.star::before,
+.star::after {
+  content: '';
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 0, 255, 0),
+    #eaeef8,
+    rgba(0, 0, 255, 0)
+  );
+  -webkit-transform: translateX(50%) rotateZ(45deg);
+  transform: translateX(50%) rotateZ(45deg);
+  border-radius: 100%;
+  -webkit-animation: shining 3000ms ease-in-out infinite;
+  animation: shining 3000ms ease-in-out infinite;
+}
+.star::after {
+  -webkit-transform: translateX(50%) rotateZ(-45deg);
+  transform: translateX(50%) rotateZ(-45deg);
+}
+
+/* Here we are adding location of each 
+   nth-child, animations, delays, and 
+   before and after effects to each 
+   and every balls(stars) */
+.star:nth-child(1) {
+  top: calc(50% - -119px);
+  left: calc(50% - 43px);
+  -webkit-animation-delay: 4000ms;
+  animation-delay: 4000ms;
+}
+.star:nth-child(1)::before,
+.star:nth-child(1)::after {
+  -webkit-animation-delay: 4000ms;
+  animation-delay: 4000ms;
+}
+.star:nth-child(2) {
+  top: calc(50% - -43px);
+  left: calc(50% - 37px);
+  -webkit-animation-delay: 5000ms;
+  animation-delay: 5000ms;
+}
+.star:nth-child(2)::before,
+.star:nth-child(2)::after {
+  -webkit-animation-delay: 5000ms;
+  animation-delay: 5000ms;
+}
+.star:nth-child(3) {
+  top: calc(50% - -40px);
+  left: calc(50% - 222px);
+  -webkit-animation-delay: 7000ms;
+  animation-delay: 7000ms;
+}
+.star:nth-child(3)::before,
+.star:nth-child(3)::after {
+  -webkit-animation-delay: 7000ms;
+  animation-delay: 7000ms;
+}
+.star:nth-child(4) {
+  top: calc(50% - -29px);
+  left: calc(50% - 113px);
+  -webkit-animation-delay: 7000ms;
+  animation-delay: 7000ms;
+}
+.star:nth-child(4)::before,
+.star:nth-child(4)::after {
+  -webkit-animation-delay: 7000ms;
+  animation-delay: 7000ms;
+}
+.star:nth-child(5) {
+  top: calc(50% - 146px);
+  left: calc(50% - 112px);
+  -webkit-animation-delay: 3000ms;
+  animation-delay: 3000ms;
+}
+.star:nth-child(5)::before,
+.star:nth-child(5)::after {
+  -webkit-animation-delay: 3000ms;
+  animation-delay: 3000ms;
+}
+.star:nth-child(6) {
+  top: calc(50% - -108px);
+  left: calc(50% - 160px);
+  -webkit-animation-delay: 3000ms;
+  animation-delay: 3000ms;
+}
+.star:nth-child(6)::before,
+.star:nth-child(6)::after {
+  -webkit-animation-delay: 3000ms;
+  animation-delay: 3000ms;
+}
+.star:nth-child(7) {
+  top: calc(50% - 52px);
+  left: calc(50% - 72px);
+  -webkit-animation-delay: 7000ms;
+  animation-delay: 7000ms;
+}
+.star:nth-child(7)::before,
+.star:nth-child(7)::after {
+  -webkit-animation-delay: 7000ms;
+  animation-delay: 7000ms;
+}
+
+/* This code will help to generate 
+effect in tail of star */
+@keyframes tail {
+  0% {
+    width: 0;
+  }
+  30% {
+    width: 100px;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+/* This code will generate shining 
+effect in head of star */
+@keyframes shining {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 30px;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+/* Here we are adding webkit-animation 
+to head of star for shining */
+@-webkit-keyframes shining {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 30px;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+/* Here we are adding webkit-animation 
+to tail of star */
+@-webkit-keyframes tail {
+  0% {
+    width: 0;
+  }
+  30% {
+    width: 100px;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+/* Here we are adding webkit-animation 
+for shooting effect */
+@-webkit-keyframes shooting {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(270px);
+    transform: translateX(270px);
+  }
+}
+
+/* Here we make shooting effect */
+@keyframes shooting {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(270px);
+    transform: translateX(270px);
+  }
+}
+
+/* ////////////////////////////////////// */
+.about-us {
+  height: 100vh;
+  padding-left: 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--color-home);
+}
+.about-us img {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 500px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(7px);
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.about-us h2 {
+  font-size: 3rem;
+
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+.about-us p {
+  width: 800px;
+  font-size: 25px;
+  line-height: 2rem;
+}
+/* ////////////////////////////////////// */
+#scrollLeft,
+#scrollRight {
+  background-color: var(--secundary-color-green-ligth);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 3rem;
+  border: none;
+  box-shadow: 1px 1px 10px 1px gray;
+  transform: scale(0.8);
+}
+#scrollLeft:hover,
+#scrollRight:hover {
+  transform: scale(1);
+}
+#scrollLeft i,
+#scrollRight i {
+  color: var(--color-home);
+  font-size: 30px;
+
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.carrete {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-home);
+}
+
+.imagenes {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 80%; /* Ajusta este valor según tus necesidades */
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.imagen {
+  width: 500px;
+  height: 600px;
+  margin-right: 10px;
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  transition: transform 1s;
+  transform: scale(0.8);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(7px);
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.imagen:hover {
+  transform: scale(1);
+}
+
+button {
+  width: 10%; /* Ajusta este valor según tus necesidades */
+}
+/* ////////////////////////////////////// */
+
+.container-form {
+  background: linear-gradient(to right bottom, #f9f4f5 50%, #f8c4cc 50%);
+  width: 100%;
+  margin-top: 5rem;
+  padding-left: 5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: -11rem;
+}
+.container-form h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+.container-form form {
+  background-color: var(--color-home);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+  height: 650px;
+  border-radius: 5px;
+  padding: 2rem;
+  position: relative;
+  box-shadow: 0px 0px 10px 1px gray;
+  margin-bottom: 4rem;
+}
+.container-form input {
+  text-align: center;
+  height: 40px;
+  border-radius: 5px;
+  width: 500px;
+  border: none;
+  box-shadow: 1px 1px 5px 1px gray;
+}
+.container-form textarea {
+  text-align: left;
+  height: 300px;
+  width: 500px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px 1px gray;
+}
+
+/* ////////////////////////////////////// */
+.container-footer {
+  position: relative;
+  display: block;
+}
+.footer {
+  position: absolute; /* o puedes usar 'fixed' dependiendo de tu diseño */
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  right: 0;
+  background-color: var(--primary-color-rose);
+  bottom: 0;
+}
+.container-footer img {
+  width: 300px;
+  /* display: block; */
+}
+.container-footer ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  list-style: none;
+}
+.contact-footer {
+  margin-top: -12.5rem;
+}
+.container-footer q {
+  display: flex;
+  width: 100%;
+  margin-left: 15rem;
+}
