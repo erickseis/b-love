@@ -1,4 +1,0 @@
-[[redirects]]
-from = “/*”
-to = “/pages/blog.html”
-status = 200
