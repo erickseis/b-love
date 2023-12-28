@@ -1,6 +1,6 @@
 /* ----------blog------------- */
 
-fetch('../../../blog.json')
+fetch('/blog.js')
     .then(res => res.json())
     .then(data => {
         const cardContainer = document.querySelector('.container-card');
