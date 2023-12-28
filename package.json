@@ -4,15 +4,15 @@
   "description": "",
   "main": "main.js",
   "dependencies": {
-    "picocolors": "^1.0.0",
     "esbuild": "^0.19.10",
     "nanoid": "^3.3.7",
+    "netlify-plugin-gatsby-cache": "^0.3.2",
+    "picocolors": "^1.0.0",
     "postcss": "^8.4.32",
-    "vite": "^5.0.10",
     "rollup": "^4.9.1",
-    "source-map-js": "^1.0.2"
+    "source-map-js": "^1.0.2",
+    "vite": "^5.0.10"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "vite build"
