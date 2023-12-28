@@ -1,30 +1,14 @@
 {
   "name": "vite-project",
-  "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
-  "dependencies": {
-    "esbuild": "^0.19.10",
-    "nanoid": "^3.3.7",
-    "netlify-plugin-gatsby-cache": "^0.3.2",
-    "picocolors": "^1.0.0",
-    "postcss": "^8.4.32",
-    "rollup": "^4.9.1",
-    "source-map-js": "^1.0.2",
-    "vite": "^5.0.10"
-  },
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "vite build"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/erickseis/b-love.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/erickseis/b-love/issues"
-  },
-  "homepage": "https://github.com/erickseis/b-love#readme"
+  "devDependencies": {
+    "vite": "^5.0.8"
+  }
 }
