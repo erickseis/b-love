@@ -1,14 +1,30 @@
 {
   "name": "vite-project",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "picocolors": "^1.0.0",
+    "esbuild": "^0.19.10",
+    "nanoid": "^3.3.7",
+    "postcss": "^8.4.32",
+    "vite": "^5.0.10",
+    "rollup": "^4.9.1",
+    "source-map-js": "^1.0.2"
   },
-  "devDependencies": {
-    "vite": "^5.0.8"
-  }
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erickseis/b-love.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erickseis/b-love/issues"
+  },
+  "homepage": "https://github.com/erickseis/b-love#readme"
 }
