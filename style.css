@@ -58,7 +58,9 @@ body {
   text-decoration: none;
   color: white;
 }
-
+.nav-icons {
+  display: none;
+}
 /* ////////////////////////////////////// */
 .container-body {
   position: relative; /* o puedes usar 'fixed' dependiendo de tu diseño */
@@ -499,4 +501,60 @@ button {
   display: flex;
   width: 100%;
   margin-left: 15rem;
+}
+@media (max-width: 1000px) {
+  /* Estilos para pantallas de 2000px o más anchos */
+  .nav-container {
+    position: fixed;
+    width: 400px;
+    height: 100vh;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    text-align: center;
+    z-index: 2;
+    margin-top: 12rem;
+  }
+  .container-ul {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 5px;
+    width: 100%;
+  }
+  .ocult {
+    display: none;
+  }
+  .nav-icons {
+    display: flex;
+  }
+  .nav-icons li a i {
+    color: white;
+    font-size: 2rem;
+  }
+
+  .container-ul li {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color-rose);
+    height: 80px;
+    border-radius: 20px;
+    transform: scale(0.9);
+    font-size: 1rem;
+    color: var(--color-home);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  }
+  .container-ul li:hover {
+    transition: ease-in-out;
+    transform: scale(1.1);
+  }
+  .container-ul a {
+    text-decoration: none;
+    color: white;
+  }
 }
