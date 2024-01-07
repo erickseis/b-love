@@ -564,28 +564,36 @@ button {
     margin-bottom: 30rem;
   }
   .home-container {
+    height: 115vh;
     width: 100%;
     padding-left: 0rem;
   }
+  .home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
   .container-description {
+    text-align: center;
     position: relative;
     z-index: 2;
   }
   .container-description h2 {
     font-size: 60px;
-    margin-left: -3rem;
-    margin-top: -5rem;
+    margin-left: -5rem;
+    margin-top: -20rem;
   }
   .container-description p {
-    margin-left: -2rem;
+    margin-left: -4rem;
     text-align: center;
-    margin-top: 22rem;
+    margin-top: 26rem;
   }
   .img-home {
-    width: 380px;
-    height: 43vh;
+    width: 450px;
+    height: 60vh;
     position: absolute;
-    top: 20rem;
+    top: 12rem;
   }
   .sky {
     width: 100px;
