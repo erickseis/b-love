@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
   color: black;
-  width: 100%;
 }
 :root {
   --color-home: #f9f4f5;
@@ -15,6 +14,9 @@ html {
 }
 body {
   background-color: var(--color-home);
+}
+#app {
+  width: 100%;
 }
 
 .nav-container {
@@ -506,7 +508,7 @@ button {
   /* Estilos para pantallas de 2000px o más anchos */
   .nav-container {
     position: fixed;
-    width: 400px;
+    width: 100%;
     height: 100vh;
     display: block;
     justify-content: center;
@@ -595,7 +597,7 @@ button {
     height: 100vh;
   }
   .container-about-us {
-    width: 400px;
+    width: 100%;
   }
   .container-about-us img {
     width: 350px;
@@ -653,7 +655,7 @@ button {
     width: 350px;
   }
   .footer {
-    width: 400px;
+    width: 100%;
     grid-template-columns: repeat(1, 1fr);
   }
   .container-footer q {
