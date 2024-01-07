@@ -108,7 +108,6 @@ body {
 /*Stars*/
 .sky {
   top: 0;
-
   position: absolute;
   height: 100vh;
   width: 150vh;
@@ -506,13 +505,12 @@ button {
   .nav-container {
     position: fixed;
     width: 100%;
-    height: 100vh;
+    height: 0;
     display: block;
-    align-items: center;
     background-color: transparent;
     text-align: center;
     z-index: 2;
-    margin-top: 20rem;
+    margin-top: 25rem;
     padding: 2rem;
   }
   .container-ul {
@@ -555,12 +553,15 @@ button {
     color: white;
   }
   .container-body {
-    position: relative;
+    position: absolute;
     display: block;
     width: 100%;
     margin-left: 0rem;
     padding-left: 0rem;
     margin-bottom: 30rem;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
   }
   .home-container {
     height: 115vh;
@@ -579,22 +580,24 @@ button {
     z-index: 2;
   }
   .container-description h2 {
-    font-size: 60px;
+    font-size: 50px;
     margin-left: -5rem;
-    margin-top: -20rem;
+    margin-top: -28rem;
   }
   .container-description p {
     margin-left: -4rem;
     text-align: center;
-    margin-top: 26rem;
+    margin-top: 20rem;
+    font-size: 25px;
   }
   .img-home {
-    width: 450px;
+    width: 400px;
     height: 60vh;
     position: absolute;
-    top: 12rem;
+    top: 8rem;
   }
   .sky {
+    display: none;
     width: 100px;
     height: 100vh;
   }
@@ -606,7 +609,7 @@ button {
     height: 350px;
   }
   .about-us p {
-    width: 400px;
+    width: 350px;
     font-size: 20px;
     line-height: 2rem;
   }
@@ -623,14 +626,14 @@ button {
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
-    width: 80%; /* Ajusta este valor según tus necesidades */
+    width: 100%; /* Ajusta este valor según tus necesidades */
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
   }
 
   .imagen {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     margin-right: 10px;
     flex: 0 0 auto;
     scroll-snap-align: center;
@@ -640,6 +643,12 @@ button {
     backdrop-filter: blur(7px);
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  #scrollLeft,
+  #scrollRight {
+    width: 50px;
+    height: 50px;
+    margin-left: 0rem;
   }
 
   .container-form {
