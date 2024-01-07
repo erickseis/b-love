@@ -549,12 +549,61 @@ button {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
   }
-  .container-ul li:hover {
-    transition: ease-in-out;
-    transform: scale(1.1);
-  }
+
   .container-ul a {
     text-decoration: none;
     color: white;
+  }
+  .container-body {
+    position: relative; /* o puedes usar 'fixed' dependiendo de tu diseño */
+    display: block;
+    width: 400px;
+    margin-left: -2rem;
+    padding-left: 0rem;
+    margin-bottom: 30rem;
+  }
+  .container-description {
+    position: absolute;
+    z-index: 2;
+  }
+  .container-description h2 {
+    font-size: 60px;
+  }
+  .img-home {
+    width: 380px;
+    height: 43vh;
+    position: absolute;
+    top: 20rem;
+  }
+  .sky {
+    width: 100px;
+    height: 100vh;
+  }
+  .container-about-us {
+    width: 400px;
+  }
+  .container-about-us img {
+    width: 350px;
+    height: 350px;
+  }
+  .about-us p {
+    width: 400px;
+    font-size: 20px;
+    line-height: 2rem;
+  }
+  .container-form form {
+    width: 380px;
+    height: 600px;
+  }
+  .container-form input {
+    width: 350px;
+    height: 40px;
+  }
+  .container-form textarea {
+    width: 350px;
+  }
+  .footer {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
