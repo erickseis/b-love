@@ -556,19 +556,33 @@ button {
     color: white;
   }
   .container-body {
-    position: relative; /* o puedes usar 'fixed' dependiendo de tu diseño */
+    position: relative;
     display: block;
-    width: 400px;
-    margin-left: -2rem;
+    width: 100%;
+    margin-left: 0rem;
     padding-left: 0rem;
     margin-bottom: 30rem;
   }
+  .home-container {
+    width: 100%;
+    padding-left: 0rem;
+  }
+  /* .home {
+    width: 400px;
+  } */
   .container-description {
     position: absolute;
     z-index: 2;
   }
   .container-description h2 {
     font-size: 60px;
+    margin-left: -3rem;
+    margin-top: -5rem;
+  }
+  .container-description p {
+    margin-left: -2rem;
+    text-align: center;
+    margin-top: 22rem;
   }
   .img-home {
     width: 380px;
