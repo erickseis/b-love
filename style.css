@@ -514,7 +514,7 @@ button {
     background-color: transparent;
     text-align: center;
     z-index: 2;
-    margin-top: 12rem;
+    margin-top: 20rem;
   }
   .container-ul {
     flex-direction: row;
@@ -529,6 +529,7 @@ button {
   }
   .nav-icons {
     display: flex;
+    margin-top: 15rem;
   }
   .nav-icons li a i {
     color: white;
@@ -540,7 +541,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--primary-color-rose);
+    background-color: var(--secundary-color-green-ligth);
     height: 80px;
     border-radius: 20px;
     transform: scale(0.9);
