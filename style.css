@@ -65,9 +65,7 @@ body {
   position: relative; /* o puedes usar 'fixed' dependiendo de tu diseño */
   display: block;
   width: 100%;
-
   padding-left: 7rem;
-
   margin-bottom: 30rem;
 }
 .home-container {
@@ -515,6 +513,7 @@ button {
     text-align: center;
     z-index: 2;
     margin-top: 20rem;
+    padding: 2rem;
   }
   .container-ul {
     flex-direction: row;
