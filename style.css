@@ -606,6 +606,9 @@ button {
     font-size: 20px;
     line-height: 2rem;
   }
+  .about-us {
+    padding-left: 0rem;
+  }
   .carrete {
     display: flex;
     align-items: center;
@@ -633,6 +636,10 @@ button {
     backdrop-filter: blur(7px);
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .container-form {
+    padding-left: 0rem;
   }
   .container-form form {
     width: 380px;
