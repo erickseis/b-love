@@ -426,7 +426,7 @@ button {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: -11rem;
+  margin-bottom: -12rem;
 }
 .container-form h2 {
   font-size: 3rem;
@@ -474,12 +474,12 @@ button {
 }
 .footer {
   position: absolute; /* o puedes usar 'fixed' dependiendo de tu diseño */
-  width: 90%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   right: 0;
   background-color: var(--primary-color-rose);
-  bottom: 0;
+  bottom: -30rem;
 }
 .container-footer img {
   width: 300px;
