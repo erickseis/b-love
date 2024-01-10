@@ -3,18 +3,19 @@
   margin: 0;
   box-sizing: border-box;
   color: black;
-  width: 100%;
 }
 :root {
   --color-home: #f9f4f5;
   --primary-color-rose: #f8c4cc;
   --secundary-color-green-ligth: #99d8e5;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: var(--color-home);
 }
 /*/////////////*/
-
 .nav-container {
   position: fixed;
   width: 10%;
@@ -57,14 +58,16 @@ body {
   text-decoration: none;
   color: white;
 }
-
+.nav-icons {
+  display: none;
+}
 /*/////////////*/
 .container-body {
   position: relative; /* o puedes usar 'fixed' dependiendo de tu diseño */
   display: block;
   width: 100%;
   padding-left: 7rem;
-  margin-bottom: 25rem;
+  margin-bottom: -5rem;
   background-color: var(--color-home);
 }
 /*/////////////*/
@@ -76,6 +79,7 @@ body {
 .blog-container h1 {
   background-color: var(--secundary-color-green-ligth);
   color: white;
+  width: 100%;
   font-size: 4rem;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
@@ -141,11 +145,11 @@ body {
   grid-template-columns: repeat(4, 1fr);
   right: 0;
   background-color: var(--primary-color-rose);
-  bottom: 0;
+  bottom: -30rem;
+  box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.1);
 }
 .container-footer img {
   width: 300px;
-
   /* display: block; */
 }
 .container-footer ul {
@@ -155,6 +159,10 @@ body {
   justify-content: center;
   gap: 3rem;
   list-style: none;
+}
+.footer ul li a {
+  list-style: none;
+  text-decoration: none;
 }
 .contact-footer {
   margin-top: -12.5rem;
@@ -182,5 +190,156 @@ body {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@media (max-width: 1000px) {
+  .nav-container {
+    position: fixed;
+    width: 100%;
+    height: 0;
+    display: block;
+    background-color: transparent;
+    text-align: center;
+    z-index: 2;
+    margin-top: 25rem;
+    padding: 2rem;
+  }
+  .container-ul {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 5px;
+    width: 100%;
+  }
+  .ocult {
+    display: none;
+  }
+  .nav-icons {
+    display: flex;
+    margin-top: 15rem;
+  }
+  .nav-icons li a i {
+    color: white;
+    font-size: 2rem;
+  }
+
+  .container-ul {
+    gap: 0.1rem;
+  }
+  .container-ul li {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secundary-color-green-ligth);
+    border-radius: 20px;
+    transform: scale(0.9);
+    font-size: 1rem;
+    color: var(--color-home);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    opacity: 60%;
+  }
+  .container-ul li:hover {
+    opacity: 100%;
+  }
+
+  .container-ul a {
+    text-decoration: none;
+    color: white;
+  }
+  .container-body {
+    position: relative; /* o puedes usar 'fixed' dependiendo de tu diseño */
+    display: block;
+    width: 100%;
+    padding-left: 0rem;
+    margin-bottom: -10rem;
+    background-color: var(--color-home);
+  }
+  .blog-container {
+    text-align: center;
+    display: grid;
+    place-items: center;
+  }
+  .blog-container h1 {
+    background-color: var(--secundary-color-green-ligth);
+    color: white;
+    font-size: 4rem;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  }
+  .img-blog {
+    width: 200px;
+    margin-bottom: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(7px);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  .container-card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 1rem;
+  }
+  .card {
+    display: grid;
+    place-items: center;
+    align-items: center;
+  }
+  .card-li {
+    padding: 1rem;
+    list-style: none;
+    width: 400px;
+    height: 650px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(7px);
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  .card-li h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+  .card-li p {
+    text-align: center;
+    width: 300px;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .container-footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer {
+    position: relative;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    right: 0;
+    margin-top: -18rem;
+    width: 100%;
+    background-color: var(--primary-color-rose);
+    box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .contact-footer {
+    margin-top: 2rem;
   }
 }
