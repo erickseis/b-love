@@ -430,6 +430,7 @@ button {
   justify-content: center;
   flex-direction: column;
   margin-bottom: -12rem;
+  z-index: 30000;
 }
 .container-form h2 {
   font-size: 3rem;

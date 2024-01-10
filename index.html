@@ -195,22 +195,39 @@
         <article id="contact" class="container-form">
           <h2>CONTACTO</h2>
 
-          <form name="contact" netlify netlify-honeypot="bot-field">
+          <form name="contact" netlify data-netlify="true">
             <label for="name">Nombre:</label><br />
-            <input type="text" id="name" name="name" /><br />
-            <label for="name">Apellido:</label><br />
-            <input type="text" id="name" name="name" /><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              autocomplete="name"
+            /><br />
+
             <label for="email">Correo electrónico:</label><br />
-            <input type="email" id="email" name="email" /><br />
-            <label for="phone">Telefono:</label><br />
-            <input type="phone" id="phone" name="phone" /><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+            /><br />
+
+            <label for="phone">Teléfono:</label><br />
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              autocomplete="tel"
+            /><br />
+
             <textarea
               name="message"
               id="description-form"
               cols="30"
               rows="10"
             ></textarea>
-            <button type="submit">ENVIAR</button>
+
+            <button id="button-submit" type="submit">ENVIAR</button>
           </form>
         </article>
         <footer class="container-footer">
