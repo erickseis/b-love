@@ -132,7 +132,16 @@ body {
   font-size: 1.1rem;
   margin-bottom: 1rem;
 }
+.whatsApp {
+  position: fixed;
+  top: 39rem;
+  left: 85rem;
+  z-index: 20000;
+}
 
+.whatsApp img {
+  width: 100px;
+}
 /* ////////////////////////////////////// */
 .container-footer {
   position: relative;

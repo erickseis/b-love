@@ -545,7 +545,16 @@ button {
 #button-submit:hover:before {
   left: 130%;
 }
+.whatsApp {
+  position: fixed;
+  top: 39rem;
+  left: 85rem;
+  z-index: 20000;
+}
 
+.whatsApp img {
+  width: 100px;
+}
 /* ////////////////////////////////////// */
 .container-footer {
   position: relative;
@@ -753,6 +762,24 @@ button {
   }
   .container-form textarea {
     width: 350px;
+  }
+  .whatsApp {
+    position: fixed;
+    top: 0rem;
+    left: 2rem;
+    z-index: 20000;
+    opacity: 20%;
+    transform: scale(0.6);
+  }
+  .whatsApp:hover {
+    opacity: 100%;
+    transition: transform 0.5s ease;
+
+    transform: scale(1);
+  }
+
+  .whatsApp img {
+    width: 100px;
   }
   .container-footer {
     position: relative;
