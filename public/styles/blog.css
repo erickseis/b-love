@@ -134,9 +134,17 @@ body {
 }
 .whatsApp {
   position: fixed;
-  top: 39rem;
-  left: 85rem;
+  top: 0rem;
+  left: 2rem;
   z-index: 20000;
+  opacity: 20%;
+  transform: scale(0.6);
+}
+.whatsApp:hover {
+  opacity: 100%;
+  transition: transform 0.5s ease;
+
+  transform: scale(1);
 }
 
 .whatsApp img {
