@@ -7,5 +7,6 @@ document.getElementById('scrollRight').addEventListener('click', function () {
     document.querySelector('.imagenes').scrollBy(300, 0);
 });
 document.getElementById('button-submit').addEventListener('click', function () {
+    e.preventDefault();
     alert("Mensaje Enviado");
 });
