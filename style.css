@@ -323,6 +323,7 @@ for shooting effect */
 .about-us {
   height: 100vh;
   padding-left: 5rem;
+  margin-top: 10rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -352,6 +353,7 @@ for shooting effect */
   width: 800px;
   font-size: 25px;
   line-height: 2rem;
+  margin-bottom: 10rem;
 }
 /* ////////////////////////////////////// */
 #scrollLeft,
@@ -501,6 +503,10 @@ button {
   display: flex;
   width: 100%;
   margin-left: 15rem;
+}
+.footer ul li a {
+  list-style: none;
+  text-decoration: none;
 }
 @media (max-width: 1000px) {
   .nav-container {

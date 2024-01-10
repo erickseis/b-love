@@ -70,10 +70,15 @@
             <h2>NOSOTROS</h2>
             <img src="./public/src/images/personaje.jpg" alt="" />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              quae itaque maxime porro maiores deserunt pariatur, magnam rem
-              dolorum optio officia? Earum molestiae, rem ducimus animi quod
-              corrupti voluptatem non.
+              "En nuestro emprendimiento de regalos sorpresa, nos apasiona crear
+              momentos únicos y emocionantes para nuestros clientes. Nuestro
+              equipo de expertos en diseño y creatividad personaliza cada regalo
+              sorpresa para asegurarnos de que se adapte perfectamente a las
+              preferencias y necesidades de nuestros clientes. Nos
+              enorgullecemos de brindar una experiencia excepcional, llena de
+              emoción y alegría, para que puedas sorprender a tus seres queridos
+              de una manera única. ¡Permítenos ser parte de tus momentos
+              especiales y crear recuerdos inolvidables juntos!"
             </p>
           </div>
         </article>
@@ -190,7 +195,7 @@
         <article id="contact" class="container-form">
           <h2>CONTACTO</h2>
 
-          <form action="/submit_form">
+          <form name="contact" method="POST" data-netlify="true" netlify>
             <label for="fname">Nombre:</label><br />
             <input type="text" id="fname" name="fname" /><br />
             <label for="lname">Apellido:</label><br />
@@ -205,18 +210,22 @@
               cols="30"
               rows="10"
             ></textarea>
-            <input type="submit" value="Enviar" />
+            <button type="submit">ENVIAR</button>
           </form>
         </article>
         <footer class="container-footer">
           <div class="footer">
             <img src="./public/src/images/logo.jpg" alt="" />
             <ul>
-              <li>Inicio</li>
-              <li>Nosotros</li>
-              <li>Catàlogo</li>
-              <li>Blog</li>
-              <li>Contacto</li>
+              <li><a href="https://b-love.netlify.app/"> INICIO</a></li>
+              <li>
+                <a href="https://b-love.netlify.app/#about-us">NOSOTROS</a>
+              </li>
+              <li><a href="https://b-love.netlify.app/#sample">CATALOGO</a></li>
+              <li><a href="/pages/blog.html">BLOG </a></li>
+              <li>
+                <a href="https://b-love.netlify.app/#contact">CONTACTO</a>
+              </li>
             </ul>
             <ul class="contact-footer">
               <li>Nos encontramos en Arica-Chile</li>
