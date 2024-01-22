@@ -9,6 +9,7 @@ B-Love es una tienda en línea diseñada para tener presencia en la web. Aunque 
 - **Visualización de Artículos**: Los clientes pueden ver todos los artículos disponibles en la tienda.
 - **Formulario de Contacto**: Los clientes pueden contactarnos directamente a través de un formulario integrado en el sitio.
 - **Botón de WhatsApp**: Con solo un clic, los clientes pueden iniciar una conversación con nosotros en WhatsApp.
+- **Sección de Blog**: Contamos con una sección de blog que se actualiza periódicamente con contenido relevante y de interés para nuestros clientes.
 
 ## Tecnologías Utilizadas ⚙️
 
